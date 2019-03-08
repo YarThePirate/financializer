@@ -19,6 +19,7 @@ Selection: """,
     5) weekly
 
 Choice: """,
+    "confirm": "Does this look good? [Y/n]: "
 }
 
 msgs = SimpleNamespace(**_messages)

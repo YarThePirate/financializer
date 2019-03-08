@@ -1,11 +1,11 @@
-from constants import freqs
+#from constants import freqs
 
 class Expense:
 
     def __init__(self, name, amnt, freq, date=None):
         self.name = name
         self.amnt = float(amnt)
-        self.freq = freqs[freq]
+        self.freq = freq 
         self.date = date
 
     def to_monthly(self):
@@ -55,6 +55,9 @@ class Expense:
             return self.amnt
         if self.freq == "weekly":
             return self._currency(self.amnt * 2.0)
+
+    def jsonish(self):
+        return { "name": self.name, "amount": self.amnt, "frequency": self.freq }
 
     
     def _currency(self, num):
