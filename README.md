@@ -11,3 +11,7 @@ Ultimately, I would like this app to fulfil the following criteria:
 - It should allow for long-term storage and retrieval of expenses
 - It should allow the user to see, on any given day, how much money they will need to have available for auto-drafting to cover all of their recurring expenses
 - It should allow users to easily perform CRUD operations on expenses
+
+## Architecture
+
+The app expects a list of expenses in JSON format. It uses the JSON expenses to build an array of Expenses.
